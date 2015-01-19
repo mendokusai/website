@@ -14,11 +14,68 @@
  *= require_self
  */
 
-* {
-	background: black;
-	color: gold;
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:39% 0%}
+    50%{background-position:62% 100%}
+    100%{background-position:39% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:39% 0%}
+    50%{background-position:62% 100%}
+    100%{background-position:39% 0%}
+}
+@keyframes AnimationName { 
+    0%{background-position:39% 0%}
+    50%{background-position:62% 100%}
+    100%{background-position:39% 0%}
+  }
+
+  @-webkit-keyframes spinnerRotate
+{
+    from{-webkit-transform:rotate(0deg);}
+    to{-webkit-transform:rotate(360deg);}
+}
+@-moz-keyframes spinnerRotate
+{
+    from{-moz-transform:rotate(0deg);}
+    to{-moz-transform:rotate(360deg);}
+}
+@-ms-keyframes spinnerRotate
+{
+    from{-ms-transform:rotate(0deg);}
+    to{-ms-transform:rotate(360deg);}
+}
+#head{
+    position:fixed;
+    top:25%;
+    left:40%;
+    -webkit-animation-name: spinnerRotate;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spinnerRotate;
+    -moz-animation-duration: 5s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spinnerRotate;
+    -ms-animation-duration: 5s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
 }
 
-body {
-	height: 800px;	
+* {
+	box-sizing; border-box;
+	
 }
+
+#colorful {
+	background: linear-gradient(0deg, #ff0000, #e3ff00, #18ff00, #00ffeb, #0005ff, #dc00ff, #ff0000);
+	background-size: 1400% 1400%;
+  min-height: 100vh;
+  -webkit-animation: AnimationName 8s ease infinite;
+  -moz-animation: AnimationName 8s ease infinite;
+  animation: AnimationName 8s ease infinite;
+	color: cyan;
+}
+
