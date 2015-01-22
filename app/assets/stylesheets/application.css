@@ -29,7 +29,7 @@
     0%{background-position:39% 0%}
     50%{background-position:62% 100%}
     100%{background-position:39% 0%}
-  }
+}
 
 @-webkit-keyframes spinnerRotate
 {
@@ -67,8 +67,7 @@
 }
 
 * {
-	box-sizing; border-box;
-	
+	box-sizing: border-box;
 }
 
 #colorful {
