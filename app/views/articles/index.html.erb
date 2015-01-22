@@ -1,7 +1,8 @@
-<h1>Article Index</h1>
+<h1>Blog Posts</h1>
 
 <% @articles.each do |article| %>
 	<h3><%= link_to article.title, article %></h3>
+	<h6><%= link_to article.created_at.strftime('%A | %l %p | %D'), article %></h6>
 <% end %>
 
 	<h6><%= link_to "New Post", new_article_path %></h6>

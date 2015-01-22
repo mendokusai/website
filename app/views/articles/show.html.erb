@@ -1,7 +1,7 @@
 <div id="container">
-<h2><%= @article.title %></h2>
+<h2><%= markdown(@article.title) %></h2>
 
-<p><%= @article.content %><p>
+<p><%= markdown(@article.content) %><p>
 
 <p>Tags: <%= @article.tags %></p>
 
