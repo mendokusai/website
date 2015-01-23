@@ -43,3 +43,12 @@ ryanAdmin = Admin.create({
 	confirmed_at: Time.now,
 	administration: true
 	});
+
+
+ryanUser = Admin.create({
+	email: "info@ryanpauley.com",
+	password: "password",
+	username: "testuser",
+	confirmed_at: Time.now,
+	administration: false
+	});

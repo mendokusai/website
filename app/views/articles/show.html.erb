@@ -5,10 +5,13 @@
 
 <p>Tags: <%= @article.tags %></p>
 
-<%= link_to "Back", articles_path %> |
- <%= link_to "New", new_article_path %> | 
- <%= link_to "Edit", edit_article_path(@article) %> | 
-<%= link_to "Delete", article_path(@article),
-	method: :delete, data: { confirm: 'Are you sure?' } %>
-
+<%= link_to "Back", articles_path %> 
+<% if admin_signed_in? %>
+	<% if current_admin.administration? %>
+	 | <%= link_to "New", new_article_path %> | 
+	 <%= link_to "Edit", edit_article_path(@article) %> | 
+	<%= link_to "Delete", article_path(@article),
+		method: :delete, data: { confirm: 'Are you sure?' } %>
+	<% end %>
+<% end %>
 	</div>
