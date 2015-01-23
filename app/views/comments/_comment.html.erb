@@ -1,0 +1,16 @@
+<p>
+    <strong>Commenter:</strong>
+    <%= markdown(comment.commenter) %>
+  </p>
+ 
+  <p>
+    <strong>Comment:</strong>
+    <%= markdown(comment.body) %>
+  </p>
+	<p>
+	<% if admin_signed_in? %>
+  	<%= link_to 'Delete Comment', [comment.article, comment],
+  	method: :delete,
+  	data: { confirm: 'Are you sure?' } %>
+  	<% end %>
+	</p>

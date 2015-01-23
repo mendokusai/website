@@ -5,6 +5,15 @@
 
 <p>Tags: <%= @article.tags %></p>
 
+<h2>Comments</h2>
+<% @article.comments.each do |comment| %>
+  <%= render @article.comments %>
+<% end %>
+
+<h2>Add a comment:</h2>
+
+<%= render 'comments/form' %>
+
 <%= link_to "Back", articles_path %> 
 <% if admin_signed_in? %>
 	<% if current_admin.administration? %>
