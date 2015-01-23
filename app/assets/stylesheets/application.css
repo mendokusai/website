@@ -47,6 +47,7 @@
     to{-ms-transform:rotate(360deg);}
 }
 
+
 #head{
     position:fixed;
     top:38%;
@@ -129,3 +130,15 @@ body {
     left:20%;
 	  }
 }
+
+#logo a{
+    text-decoration: none;
+    color: black;
+}
+#logo a:hover{
+    text-decoration: blink;
+    color: #f2f7f7;
+    /*color: linear-gradient(0deg, #ff0000, #e3ff00, #18ff00, #00ffeb, #0005ff, #dc00ff, #ff0000);*/
+}
+
+

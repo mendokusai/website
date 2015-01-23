@@ -1,4 +1,10 @@
-<h1>Blog Posts</h1>
+<h5>Most Recent Post</h5>
+<h6><%= @last.created_at.strftime('%A | %l %p | %D') %></h6>
+	
+	<h2><%= @last.title %></h2>
+	<p><%= @last.content %></p>
+
+<hr>
 
 <% @articles.each do |article| %>
 	<h3><%= link_to article.title, article %></h3>
