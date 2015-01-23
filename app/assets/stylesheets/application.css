@@ -89,14 +89,14 @@
 #logo li{
 	font-size: 3em;
 	display: inline;
-	font-family: 'Berkshire Swash', cursive;
+	font-family: 'Berkshire Swash', sans-serif;
 	padding-right: 2em; 
 }
 
 #logo li:first-child{
 	font-size: 4em;
 	display: inline;
-	font-family: 'Berkshire Swash', cursive;
+	font-family: 'Berkshire Swash', sans-serif;
 }
 
 
